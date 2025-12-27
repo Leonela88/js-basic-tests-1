@@ -1,13 +1,33 @@
-function welcome(){
-    //Escribe tu código aquí
+function welcome() {
+    
+    return "Hello World";
 };
 
-function evenOrOdd(n){
-    //Escribe tu código aquí
+function evenOrOdd(n) {
+    
+    if (n % 2 === 0) {
+
+        return "even";
+
+    } else {
+        return "odd";
+
+    }
 };
+
+console.log(evenOrOdd(2));
+console.log(evenOrOdd(13));
+
 
 function greeting(name) {
-    //Escribe tu código aquí
-};
+    return "Hola, " + name + "!";
+}
+
+const names = ["Javi", "gente", "Mary"];
+
+
+for (let i = 0; i < names.length; i++) {
+greeting(names[i]);
+}
 
 export { evenOrOdd, greeting, welcome }
